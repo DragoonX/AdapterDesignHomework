@@ -1,4 +1,5 @@
-﻿using AdapterDesignOdev.Model;
+﻿using AdapterDesignOdev.Adapter;
+using AdapterDesignOdev.Model;
 using System;
 
 namespace AdapterDesignOdev
@@ -7,11 +8,10 @@ namespace AdapterDesignOdev
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            using (AdapterDesignContext adapterDesignContext = new AdapterDesignContext())
-            {
+            Console.WriteLine("Program Initialized !!!");
 
-            }
+            ItemAdapter itemAdapter = new ItemAdapter();
+
         }
     }
 }
